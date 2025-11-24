@@ -12,8 +12,8 @@ const Footer = () => {
                             <span className="text-xl font-bold">MapEdition</span>
                         </div>
                         <p className="text-slate-400 text-sm">
-                            Your trusted partner for car rentals, gadgets, and stationery.
-                            Professional services tailored to your needs.
+                            Global Procurement & Logistics Solutions.
+                            Connecting your business to the world with efficiency and reliability.
                         </p>
                     </div>
 
@@ -22,17 +22,22 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Car Rentals
+                                    Procurement
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Gadgets
+                                    Logistics
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Stationery
+                                    Supply Chain
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/services" className="hover:text-blue-400 transition-colors">
+                                    Warehousing
                                 </Link>
                             </li>
                         </ul>
@@ -47,13 +52,18 @@ const Footer = () => {
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/contact" className="hover:text-blue-400 transition-colors">
-                                    Contact
+                                <Link to="/partners" className="hover:text-blue-400 transition-colors">
+                                    Partners
                                 </Link>
                             </li>
                             <li>
-                                <Link to="/privacy" className="hover:text-blue-400 transition-colors">
-                                    Privacy Policy
+                                <Link to="/team" className="hover:text-blue-400 transition-colors">
+                                    Team
+                                </Link>
+                            </li>
+                            <li>
+                                <Link to="/contact" className="hover:text-blue-400 transition-colors">
+                                    Contact
                                 </Link>
                             </li>
                         </ul>

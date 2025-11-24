@@ -1,4 +1,4 @@
-import { Car, Smartphone, PenTool, Check } from "lucide-react";
+import { Globe, Truck, Package, Warehouse, Check, Anchor, Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -6,28 +6,52 @@ import { Link } from "react-router-dom";
 const Services = () => {
     const categories = [
         {
-            id: "rentals",
-            title: "Car Rentals",
-            icon: <Car className="h-12 w-12 text-blue-500" />,
-            description: "Choose from our wide range of vehicles for any occasion.",
-            features: ["Economy & Luxury Cars", "Daily, Weekly, Monthly Rates", "Chauffeur Services", "Airport Transfers"],
-            image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80",
+            id: "procurement",
+            title: "Strategic Procurement",
+            icon: <Globe className="h-12 w-12 text-blue-500" />,
+            description: "Comprehensive sourcing strategies to secure the best materials and products at competitive prices.",
+            features: ["Global Sourcing", "Vendor Negotiation", "Quality Assurance", "Contract Management"],
+            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
         },
         {
-            id: "gadgets",
-            title: "Gadgets & Tech",
-            icon: <Smartphone className="h-12 w-12 text-blue-500" />,
-            description: "Stay ahead with the latest technology and accessories.",
-            features: ["Smartphones & Tablets", "Laptops & Computers", "Audio Accessories", "Smart Home Devices"],
-            image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80",
+            id: "logistics",
+            title: "Global Logistics",
+            icon: <Truck className="h-12 w-12 text-blue-500" />,
+            description: "Efficient transportation solutions across land, sea, and air to ensure timely delivery.",
+            features: ["Freight Forwarding", "Customs Brokerage", "Last-Mile Delivery", "Route Optimization"],
+            image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80",
         },
         {
-            id: "stationery",
-            title: "Stationery",
-            icon: <PenTool className="h-12 w-12 text-blue-500" />,
-            description: "Premium office supplies and stationery for your business.",
-            features: ["Office Supplies", "Writing Instruments", "Paper Products", "Filing & Storage"],
-            image: "https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&q=80",
+            id: "supply-chain",
+            title: "Supply Chain Management",
+            icon: <Package className="h-12 w-12 text-blue-500" />,
+            description: "End-to-end visibility and control over your supply chain operations.",
+            features: ["Demand Planning", "Inventory Control", "Risk Management", "Performance Analytics"],
+            image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "warehousing",
+            title: "Warehousing & Distribution",
+            icon: <Warehouse className="h-12 w-12 text-blue-500" />,
+            description: "Secure storage and efficient distribution networks to keep your goods moving.",
+            features: ["Storage Solutions", "Order Fulfillment", "Cross-Docking", "Inventory Tracking"],
+            image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "sea-freight",
+            title: "Sea Freight",
+            icon: <Anchor className="h-12 w-12 text-blue-500" />,
+            description: "Cost-effective ocean transport for large volume shipments.",
+            features: ["FCL & LCL", "Port-to-Port", "Door-to-Door", "Cargo Insurance"],
+            image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "air-freight",
+            title: "Air Freight",
+            icon: <Plane className="h-12 w-12 text-blue-500" />,
+            description: "Fast and reliable air cargo services for time-sensitive shipments.",
+            features: ["Express Shipping", "Charter Services", "Perishable Cargo", "Dangerous Goods"],
+            image: "https://images.unsplash.com/photo-1436491865332-7a6153217e7a?auto=format&fit=crop&q=80",
         },
     ];
 
@@ -37,7 +61,7 @@ const Services = () => {
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h1 className="text-4xl font-bold tracking-tight mb-4">Our Services</h1>
                     <p className="text-lg text-slate-600">
-                        We offer a diverse range of professional services designed to meet your personal and business needs.
+                        We provide integrated procurement and logistics solutions designed to drive efficiency and growth for your business.
                     </p>
                 </div>
 
@@ -65,7 +89,7 @@ const Services = () => {
                                 </p>
                                 <Card className="border-slate-200">
                                     <CardHeader>
-                                        <CardTitle className="text-lg">What we offer</CardTitle>
+                                        <CardTitle className="text-lg">Key Features</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -79,7 +103,7 @@ const Services = () => {
                                     </CardContent>
                                     <CardFooter>
                                         <Button className="w-full sm:w-auto" asChild>
-                                            <Link to="/contact">Inquire Now</Link>
+                                            <Link to="/contact">Request a Quote</Link>
                                         </Button>
                                     </CardFooter>
                                 </Card>
