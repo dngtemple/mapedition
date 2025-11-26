@@ -3,34 +3,34 @@ import { Button } from "@/components/ui/button";
 
 const partners = [
     {
-        name: "TechCorp Solutions",
-        description: "Leading provider of enterprise software solutions.",
-        logo: "https://placehold.co/150x150/png?text=TechCorp",
+        name: "Dell",
+        description: "Innovative technology solutions for personal and business use.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAMmGS2QqOuFAD_A_Je2y3JRoWaE-K9WWgCw&s",
     },
     {
-        name: "GreenEarth Innovations",
-        description: "Sustainable energy and eco-friendly products.",
-        logo: "https://placehold.co/150x150/png?text=GreenEarth",
+        name: "Lenovo",
+        description: "Smarter technology for all, from laptops to data centers.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGsIeOdoR9c5RfOP61nZOK6FgMXx6y0tlzNw&s",
     },
     {
-        name: "Global Logistics",
-        description: "Worldwide shipping and supply chain management.",
-        logo: "https://placehold.co/150x150/png?text=Global",
+        name: "BIC",
+        description: "Simple, inventive, and reliable stationery products.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0N928sEGhAhGdBld7jEQO4dLkgovv-dXJ-Q&s",
     },
     {
-        name: "Creative Studio",
-        description: "Award-winning design and branding agency.",
-        logo: "https://placehold.co/150x150/png?text=Creative",
+        name: "Vector Technologies",
+        description: "Advanced technological solutions and engineering.",
+        logo: "https://media.licdn.com/dms/image/v2/C510BAQFA6OuDjR98vQ/company-logo_200_200/company-logo_200_200/0/1631391156561?e=2147483647&v=beta&t=nPr6KBb3EFrOCwj68daQmc5lfv3YlsH7pY3nJTtXXgY",
     },
     {
-        name: "SecureNet Systems",
-        description: "Cybersecurity experts protecting your digital assets.",
-        logo: "https://placehold.co/150x150/png?text=SecureNet",
+        name: "Casio",
+        description: "Creativity and contribution through innovative products.",
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRjNXdwrAwdvLkQR0E36XA6BDnXZL96utDMQ&s",
     },
     {
-        name: "HealthPlus",
-        description: "Innovative healthcare solutions for a better life.",
-        logo: "https://placehold.co/150x150/png?text=HealthPlus",
+        name: "HP",
+        description: "Engineering experiences that amaze.",
+        logo: "https://upload.wikimedia.org/wikipedia/commons/0/05/HP_logo_2025.svg",
     },
 ];
 

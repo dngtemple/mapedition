@@ -38,7 +38,7 @@ const Home = () => {
         <div className="flex flex-col min-h-screen">
             {/* Hero Section */}
             <section className="relative py-20 md:py-32 bg-slate-900 text-white overflow-hidden">
-                <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1606056343586-0955955615d8?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-20"></div>
+                <div className="absolute inset-0 bg-[url('https://mlm.lentarex.com/aw/wp-content/uploads/2023/06/About.jpg')] bg-cover bg-center opacity-20"></div>
                 <div className="container relative z-10 text-center">
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6">
                         Connecting <span className="text-yellow-400">Ghana</span> to the <br className="hidden md:inline" />
@@ -52,9 +52,7 @@ const Home = () => {
                         <Button size="lg" className="bg-blue-600 hover:bg-blue-700" asChild>
                             <Link to="/services">Explore Our Sectors</Link>
                         </Button>
-                        <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 hover:text-white" asChild>
-                            <Link to="/contact">Request a Quote</Link>
-                        </Button>
+                        
                     </div>
                 </div>
             </section>

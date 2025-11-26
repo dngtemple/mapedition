@@ -1,42 +1,35 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import Redi from "@/assets/Redi.jpeg";
+import Mike from "@/assets/Mike.jpeg";
+import Sway from "@/assets/Sway.jpeg";
 
 const teamMembers = [
     {
-        name: "Sarah Johnson",
-        role: "CEO & Founder",
-        bio: "Visionary leader with over 15 years of experience in the tech industry.",
-        photo: "https://placehold.co/400x400/png?text=Sarah",
+        name: "Michael Agyekum Afful",
+        role: "IT Professional",
+        bio: `As a driven and ambitious IT professional, I'm excited to take on new challenges that fuel continuous learning and growth. With a strong technical foundation and excellent interpersonal skills, I thrive in collaborative environments, building strong relationships with my team and delivering exceptional customer support that exceeds expectations. My organized and structured approach, combined with a relentless work ethic, ensures high-quality results and seamless execution. I'm now seeking a rewarding opportunity with a forward-thinking organization where I can leverage my skills, expertise, and passion for IT to drive success and make a lasting impact`,
+        photo: Mike,
     },
     {
-        name: "Michael Chen",
-        role: "CTO",
-        bio: "Expert in cloud architecture and scalable systems.",
-        photo: "https://placehold.co/400x400/png?text=Michael",
+        name: "Redeemer Ayitey",
+        role: "Procurement Manager",
+        bio: `Redeemer leads procurement strategy and supplier partnerships at Map Edition Group Limited, bringing deep expertise in contract management, supply chain optimization, and regulatory compliance. With a sharp analytical mind and a commitment to operational excellence, he ensures that procurement decisions align with both business goals and ethical standards.
+
+Redeemer combines entrepreneurial drive with a methodical approach to sourcing, logistics, and vendor relations. His leadership fosters transparency, cost-efficiency, and long-term value across the supply chain.
+
+Redeemer holds a Master’s in International Relations and Diplomacy, and is currently pursuing International Business Certification, enriching his global perspective and enhancing his ability to navigate complex cross-border procurement landscapes. He is passionate about building sustainable, competitive businesses that serve communities and create lasting impact.`,
+        photo: Redi,
     },
     {
-        name: "Emily Davis",
-        role: "Head of Design",
-        bio: "Passionate about creating intuitive and beautiful user experiences.",
-        photo: "https://placehold.co/400x400/png?text=Emily",
-    },
-    {
-        name: "David Wilson",
-        role: "Lead Developer",
-        bio: "Full-stack wizard who loves solving complex problems.",
-        photo: "https://placehold.co/400x400/png?text=David",
-    },
-    {
-        name: "Jessica Brown",
-        role: "Marketing Director",
-        bio: "Strategic thinker driving brand growth and engagement.",
-        photo: "https://placehold.co/400x400/png?text=Jessica",
-    },
-    {
-        name: "Robert Taylor",
-        role: "Product Manager",
-        bio: "Ensuring we deliver value to our customers with every release.",
-        photo: "https://placehold.co/400x400/png?text=Robert",
-    },
+        name: "John Godsway Danyo",
+        role: "Real Estate Consultant",
+        bio: `I’m a passionate Real Estate Consultant dedicated to helping individuals, families, and investors find the right properties that fit their goals and lifestyle. With a deep understanding of the Ghanaian real estate market and a strong network of developers, agents, and investors, I bridge the gap between dreams and opportunities.
+
+Whether it’s residential homes, commercial spaces, or investment properties, I believe in offering personalized, transparent, and data-driven guidance, ensuring every client makes informed decisions with confidence.
+
+I’m not just about closing deals; I’m about building long-term relationships rooted in trust, professionalism, and results.`,
+        photo: Sway,
+    }
 ];
 
 const Team = () => {

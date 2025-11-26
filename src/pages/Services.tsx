@@ -1,10 +1,34 @@
-import { Laptop, Car, Home as HomeIcon, Sprout, Truck, Globe, Check } from "lucide-react";
+import { Laptop, Car, Home as HomeIcon,Sprout, Truck, Globe, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 
 const Services = () => {
     const categories = [
+        {
+            id: "general-supplies",
+            title: "General Supplies",
+            icon: <Globe className="h-12 w-12 text-blue-500" />,
+            description: "Your one-stop source for all general business and operational supplies.",
+            features: ["Office Consumables", "Industrial Supplies", "Safety Gear", "Maintenance Tools"],
+            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "home-office",
+            title: "Home & Office Appliances",
+            icon: <HomeIcon className="h-12 w-12 text-blue-500" />,
+            description: "Premium appliances for modern homes and productive offices.",
+            features: ["Air Conditioners", "Refrigerators", "Smart TVs", "Kitchen Appliances"],
+            image: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "construction",
+            title: "Construction Equipment",
+            icon: <Truck className="h-12 w-12 text-blue-500" />,
+            description: "Heavy-duty machinery and equipment for construction projects.",
+            features: ["Excavators", "Concrete Mixers", "Scaffolding", "Power Tools"],
+            image: "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&q=80",
+        },
         {
             id: "it-electronics",
             title: "IT & Electronics",
@@ -40,18 +64,10 @@ const Services = () => {
         {
             id: "logistics",
             title: "Global Logistics",
-            icon: <Truck className="h-12 w-12 text-blue-500" />,
+            icon: <Globe className="h-12 w-12 text-blue-500" />,
             description: "The backbone of our operations, ensuring your goods arrive safely.",
             features: ["Air & Sea Freight", "Customs Clearance", "Warehousing", "Last-Mile Delivery"],
             image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
-        },
-        {
-            id: "procurement",
-            title: "General Procurement",
-            icon: <Globe className="h-12 w-12 text-blue-500" />,
-            description: "Sourcing anything you need from international markets.",
-            features: ["Global Sourcing", "Vendor Verification", "Price Negotiation", "Quality Control"],
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
         },
     ];
 

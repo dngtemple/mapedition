@@ -1,5 +1,6 @@
-import { Map, Mail, Phone, MapPin } from "lucide-react";
+import {  Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import Icon from "@/assets/icon.jpeg";
 
 const Footer = () => {
     return (
@@ -8,7 +9,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     <div className="space-y-4">
                         <div className="flex items-center space-x-2">
-                            <Map className="h-6 w-6 text-blue-400" />
+                            <img src={Icon} className="h-10 w-10 text-blue-400" />
                             <span className="text-xl font-bold">MapEdition</span>
                         </div>
                         <p className="text-slate-400 text-sm">
@@ -74,11 +75,15 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li className="flex items-center space-x-2">
                                 <MapPin className="h-4 w-4 text-blue-400" />
-                                <span>Accra, Ghana</span>
+                                <span>Accra Central, Adabraka, Kojo Thompson Rd</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <Phone className="h-4 w-4 text-blue-400" />
-                                <span>+233 (0) 555 123 456</span>
+                                <span>+233 (0) 50-188-6853</span>
+                            </li>
+                            <li className="flex items-center space-x-2">
+                                <Phone className="h-4 w-4 text-blue-400" />
+                                <span>+233 (0) 54-061-0078</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <Mail className="h-4 w-4 text-blue-400" />

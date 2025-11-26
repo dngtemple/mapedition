@@ -31,8 +31,8 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-semibold">Visit Us</h3>
                                         <p className="text-sm text-slate-600">
-                                            123 Business Avenue<br />
-                                            Tech District, City 10001
+                                            Ghana<br />
+                                            Accra Central, Adabraka, Kojo Thompson Rd
                                         </p>
                                     </div>
                                 </div>
@@ -41,7 +41,8 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-semibold">Call Us</h3>
                                         <p className="text-sm text-slate-600">
-                                            +1 (555) 123-4567<br />
+                                            +233 (0) 54-061-0078<br />
+                                            +233 (0) 50-188-6853<br />
                                             Mon-Fri, 9am - 6pm
                                         </p>
                                     </div>
@@ -52,7 +53,7 @@ const Contact = () => {
                                         <h3 className="font-semibold">Email Us</h3>
                                         <p className="text-sm text-slate-600">
                                             info@mapedition.com<br />
-                                            support@mapedition.com
+                                            
                                         </p>
                                     </div>
                                 </div>

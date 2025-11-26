@@ -6,7 +6,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
 import Team from "./pages/Team";
-import Gallery from "./pages/Gallery";
+import Clients from "./pages/Clients";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -18,8 +19,11 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="partners" element={<Partners />} />
+          <Route path="clients" element={<Clients />} />
           <Route path="team" element={<Team />} />
-          <Route path="gallery" element={<Gallery />} />
+          <Route path="*" element={<NotFound />} />
+
+
         </Route>
       </Routes>
     </Router>

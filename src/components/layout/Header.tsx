@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, Map } from "lucide-react";
+import { Menu, } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
+import Icon from "@/assets/icon.jpeg";
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
     const location = useLocation();
@@ -13,9 +14,9 @@ const Header = () => {
         { name: "Services", path: "/services" },
         { name: "About", path: "/about" },
         { name: "Partners", path: "/partners" },
+        { name: "Clients", path: "/clients" },
         { name: "Team", path: "/team" },
-        { name: "Gallery", path: "/gallery" },
-        { name: "Contact", path: "/contact" },
+        { name: "Contact Us", path: "/contact" },
     ];
 
     const isActive = (path: string) => location.pathname === path;
@@ -24,7 +25,7 @@ const Header = () => {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container flex h-16 items-center justify-between">
                 <Link to="/" className="flex items-center space-x-2">
-                    <Map className="h-6 w-6 text-primary" />
+                    <img src={Icon} className="h-10 w-10 text-primary" />
                     <span className="text-xl font-bold">MapEdition</span>
                 </Link>
 
