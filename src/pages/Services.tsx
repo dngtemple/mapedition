@@ -1,4 +1,4 @@
-import { Globe, Truck, Package, Warehouse, Check, Anchor, Plane } from "lucide-react";
+import { Laptop, Car, Home as HomeIcon, Sprout, Truck, Globe, Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -6,52 +6,52 @@ import { Link } from "react-router-dom";
 const Services = () => {
     const categories = [
         {
-            id: "procurement",
-            title: "Strategic Procurement",
-            icon: <Globe className="h-12 w-12 text-blue-500" />,
-            description: "Comprehensive sourcing strategies to secure the best materials and products at competitive prices.",
-            features: ["Global Sourcing", "Vendor Negotiation", "Quality Assurance", "Contract Management"],
-            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
+            id: "it-electronics",
+            title: "IT & Electronics",
+            icon: <Laptop className="h-12 w-12 text-blue-500" />,
+            description: "We supply top-tier technology hardware to businesses and institutions.",
+            features: ["Lenovo Laptops & Workstations", "Enterprise Servers", "Networking Equipment", "Computer Accessories"],
+            image: "https://images.unsplash.com/photo-1588508065123-287b28e013da?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "automotive",
+            title: "Automotive Solutions",
+            icon: <Car className="h-12 w-12 text-blue-500" />,
+            description: "Importing reliable vehicles and parts for personal and commercial use.",
+            features: ["Vehicle Importation", "Fleet Management", "Spare Parts Procurement", "Heavy Duty Trucks"],
+            image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "agriculture",
+            title: "Agricultural Solutions",
+            icon: <Sprout className="h-12 w-12 text-blue-500" />,
+            description: "Supporting Ghana's agriculture with modern machinery and inputs.",
+            features: ["Tractors & Harvesters", "Irrigation Systems", "Fertilizers & Seeds", "Agro-Processing Equipment"],
+            image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80",
+        },
+        {
+            id: "real-estate",
+            title: "Real Estate & Construction",
+            icon: <HomeIcon className="h-12 w-12 text-blue-500" />,
+            description: "Facilitating property development and sourcing construction materials.",
+            features: ["Construction Materials", "Property Development", "Interior Fittings", "Smart Home Systems"],
+            image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80",
         },
         {
             id: "logistics",
             title: "Global Logistics",
             icon: <Truck className="h-12 w-12 text-blue-500" />,
-            description: "Efficient transportation solutions across land, sea, and air to ensure timely delivery.",
-            features: ["Freight Forwarding", "Customs Brokerage", "Last-Mile Delivery", "Route Optimization"],
-            image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&q=80",
+            description: "The backbone of our operations, ensuring your goods arrive safely.",
+            features: ["Air & Sea Freight", "Customs Clearance", "Warehousing", "Last-Mile Delivery"],
+            image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80",
         },
         {
-            id: "supply-chain",
-            title: "Supply Chain Management",
-            icon: <Package className="h-12 w-12 text-blue-500" />,
-            description: "End-to-end visibility and control over your supply chain operations.",
-            features: ["Demand Planning", "Inventory Control", "Risk Management", "Performance Analytics"],
-            image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?auto=format&fit=crop&q=80",
-        },
-        {
-            id: "warehousing",
-            title: "Warehousing & Distribution",
-            icon: <Warehouse className="h-12 w-12 text-blue-500" />,
-            description: "Secure storage and efficient distribution networks to keep your goods moving.",
-            features: ["Storage Solutions", "Order Fulfillment", "Cross-Docking", "Inventory Tracking"],
-            image: "https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&q=80",
-        },
-        {
-            id: "sea-freight",
-            title: "Sea Freight",
-            icon: <Anchor className="h-12 w-12 text-blue-500" />,
-            description: "Cost-effective ocean transport for large volume shipments.",
-            features: ["FCL & LCL", "Port-to-Port", "Door-to-Door", "Cargo Insurance"],
-            image: "https://images.unsplash.com/photo-1494412651409-8963ce7935a7?auto=format&fit=crop&q=80",
-        },
-        {
-            id: "air-freight",
-            title: "Air Freight",
-            icon: <Plane className="h-12 w-12 text-blue-500" />,
-            description: "Fast and reliable air cargo services for time-sensitive shipments.",
-            features: ["Express Shipping", "Charter Services", "Perishable Cargo", "Dangerous Goods"],
-            image: "https://images.unsplash.com/photo-1436491865332-7a6153217e7a?auto=format&fit=crop&q=80",
+            id: "procurement",
+            title: "General Procurement",
+            icon: <Globe className="h-12 w-12 text-blue-500" />,
+            description: "Sourcing anything you need from international markets.",
+            features: ["Global Sourcing", "Vendor Verification", "Price Negotiation", "Quality Control"],
+            image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80",
         },
     ];
 
@@ -59,9 +59,9 @@ const Services = () => {
         <div className="py-12 bg-slate-50 min-h-screen">
             <div className="container">
                 <div className="text-center max-w-3xl mx-auto mb-16">
-                    <h1 className="text-4xl font-bold tracking-tight mb-4">Our Services</h1>
+                    <h1 className="text-4xl font-bold tracking-tight mb-4">Our Sectors</h1>
                     <p className="text-lg text-slate-600">
-                        We provide integrated procurement and logistics solutions designed to drive efficiency and growth for your business.
+                        Specialized procurement and logistics services tailored to key industries in Ghana.
                     </p>
                 </div>
 
@@ -89,7 +89,7 @@ const Services = () => {
                                 </p>
                                 <Card className="border-slate-200">
                                     <CardHeader>
-                                        <CardTitle className="text-lg">Key Features</CardTitle>
+                                        <CardTitle className="text-lg">What We Offer</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -103,7 +103,7 @@ const Services = () => {
                                     </CardContent>
                                     <CardFooter>
                                         <Button className="w-full sm:w-auto" asChild>
-                                            <Link to="/contact">Request a Quote</Link>
+                                            <Link to="/contact">Inquire Now</Link>
                                         </Button>
                                     </CardFooter>
                                 </Card>

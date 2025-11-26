@@ -12,32 +12,32 @@ const Footer = () => {
                             <span className="text-xl font-bold">MapEdition</span>
                         </div>
                         <p className="text-slate-400 text-sm">
-                            Global Procurement & Logistics Solutions.
-                            Connecting your business to the world with efficiency and reliability.
+                            Connecting Ghana to the World.
+                            Specialized in IT, Automotive, Agriculture, and Real Estate Procurement & Logistics.
                         </p>
                     </div>
 
                     <div>
-                        <h3 className="font-semibold mb-4">Services</h3>
+                        <h3 className="font-semibold mb-4">Sectors</h3>
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Procurement
+                                    IT & Electronics
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Logistics
+                                    Automotive
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Supply Chain
+                                    Agriculture
                                 </Link>
                             </li>
                             <li>
                                 <Link to="/services" className="hover:text-blue-400 transition-colors">
-                                    Warehousing
+                                    Real Estate
                                 </Link>
                             </li>
                         </ul>
@@ -74,11 +74,11 @@ const Footer = () => {
                         <ul className="space-y-2 text-sm text-slate-400">
                             <li className="flex items-center space-x-2">
                                 <MapPin className="h-4 w-4 text-blue-400" />
-                                <span>123 Business Ave, City</span>
+                                <span>Accra, Ghana</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <Phone className="h-4 w-4 text-blue-400" />
-                                <span>+1 (555) 123-4567</span>
+                                <span>+233 (0) 555 123 456</span>
                             </li>
                             <li className="flex items-center space-x-2">
                                 <Mail className="h-4 w-4 text-blue-400" />
