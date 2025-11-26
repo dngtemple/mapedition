@@ -1,4 +1,4 @@
-import { ArrowRight, Globe, Truck, Laptop, Car, Home as HomeIcon, Sprout, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Laptop, Car, Home as HomeIcon, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Link } from "react-router-dom";
