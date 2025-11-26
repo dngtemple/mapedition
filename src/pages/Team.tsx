@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import Redi from "@/assets/Redi.jpeg";
-import Mike from "@/assets/Mike.jpeg";
-import Sway from "@/assets/Sway.jpeg";
+import Redi from "@/assets/redi.jpeg";
+import Mike from "@/assets/mike.jpeg";
+import Sway from "@/assets/sway.jpeg";
 
 const teamMembers = [
     {
