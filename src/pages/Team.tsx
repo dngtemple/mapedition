@@ -13,11 +13,7 @@ const teamMembers = [
     {
         name: "Redeemer Ayitey",
         role: "Procurement Manager",
-        bio: `Redeemer leads procurement strategy and supplier partnerships at Map Edition Group Limited, bringing deep expertise in contract management, supply chain optimization, and regulatory compliance. With a sharp analytical mind and a commitment to operational excellence, he ensures that procurement decisions align with both business goals and ethical standards.
-
-Redeemer combines entrepreneurial drive with a methodical approach to sourcing, logistics, and vendor relations. His leadership fosters transparency, cost-efficiency, and long-term value across the supply chain.
-
-Redeemer holds a Master’s in International Relations and Diplomacy, and is currently pursuing International Business Certification, enriching his global perspective and enhancing his ability to navigate complex cross-border procurement landscapes. He is passionate about building sustainable, competitive businesses that serve communities and create lasting impact.`,
+        bio:`I’m a procurement professional leading strategy and supplier partnerships at Map Edition Group Limited, focused on building efficient, ethical, and reliable supply chains. With strong expertise in sourcing, contract management, and vendor relations, I ensure procurement decisions support business growth and compliance. Backed by a Master’s in International Relations and ongoing International Business certification, I bring a global perspective to creating sustainable value. I’m not just about cutting costs; I’m about building strong partnerships, long-term value, and impactful business outcomes.`,
         photo: Redi,
     },
     {
