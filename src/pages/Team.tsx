@@ -11,7 +11,7 @@ const teamMembers = [
         photo: Mike,
     },
     {
-        name: "Redeemer Ayitey",
+        name: "Redeemer Eyiti",
         role: "Procurement Manager",
         bio:`I’m a procurement professional leading strategy and supplier partnerships at Map Edition Group Limited, focused on building efficient, ethical, and reliable supply chains. With strong expertise in sourcing, contract management, and vendor relations, I ensure procurement decisions support business growth and compliance. Backed by a Master’s in International Relations and ongoing International Business certification, I bring a global perspective to creating sustainable value. I’m not just about cutting costs; I’m about building strong partnerships, long-term value, and impactful business outcomes.`,
         photo: Redi,
