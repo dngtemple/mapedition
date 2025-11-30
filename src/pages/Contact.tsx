@@ -9,33 +9,37 @@ import { useState } from "react";
 const Contact = () => {
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
+  const WHATSAPP_NUMBER = "233540610078"; 
 
-    const formData = new FormData(e.target);
+ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  setLoading(true);
 
-    try {
-      const res = await fetch("https://getform.io/f/bejeqgya", {
-        method: "POST",
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
-      });
+  const form = e.currentTarget;
 
-      if (res.ok) {
-        toast.success("Message sent successfully ✅");
-        e.target.reset();
-      } else {
-        toast.error("Failed to send message. Try again.");
-      }
-    } catch (error) {
-      toast.error("Network error. Please check your internet.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  const name = (form.elements.namedItem("name") as HTMLInputElement).value;
+  const email = (form.elements.namedItem("email") as HTMLInputElement).value;
+  const subject = (form.elements.namedItem("subject") as HTMLInputElement).value;
+  const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
+
+  const text = `Hello Mapedition 👋
+    
+Name: ${name}
+Email: ${email}
+Subject: ${subject}
+Message: ${message}`;
+
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+
+  toast.success("Opening WhatsApp...");
+
+  setTimeout(() => {
+    window.open(url, "_blank");
+    form.reset();
+    setLoading(false);
+  }, 800);
+};
+
 
   return (
     <div className="py-12 md:py-20 bg-slate-50 min-h-screen">
@@ -117,25 +121,14 @@ const Contact = () => {
                       <label htmlFor="name" className="text-sm font-medium">
                         Name
                       </label>
-                      <Input
-                        id="name"
-                        name="name"
-                        placeholder="John Doe"
-                        required
-                      />
+                      <Input id="name" name="name" placeholder="John Doe" required />
                     </div>
 
                     <div className="space-y-2">
                       <label htmlFor="email" className="text-sm font-medium">
                         Email
                       </label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="john@example.com"
-                        required
-                      />
+                      <Input id="email" name="email" type="email" placeholder="john@example.com" required />
                     </div>
 
                   </div>
@@ -144,12 +137,7 @@ const Contact = () => {
                     <label htmlFor="subject" className="text-sm font-medium">
                       Subject
                     </label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      placeholder="How can we help?"
-                      required
-                    />
+                    <Input id="subject" name="subject" placeholder="How can we help?" required />
                   </div>
 
                   <div className="space-y-2">
@@ -165,11 +153,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button
-                    type="submit"
-                    className="w-full md:w-auto"
-                    disabled={loading}
-                  >
+                  <Button type="submit" className="w-full md:w-auto" disabled={loading}>
                     {loading ? "Sending..." : "Send Message"}
                   </Button>
 
