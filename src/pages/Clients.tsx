@@ -25,6 +25,18 @@ const clients = [
         name: "Plan International",
         logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTenoXwwEuoCEFOHuM_vnCgG_X2iLGX5DU0ew&s",
     },
+    {
+        name: "CBG",
+        logo: "https://www.myjoyonline.com/wp-content/uploads/2024/09/CBG.png",
+    },
+    {
+        name: "Bolgatanga Regional Hospital",
+        logo: "https://www.fact-checkghana.com/wp-content/uploads/2024/09/Bolga-regional-hospital.jpg",
+    },
+    {
+        name: "GIZ",
+        logo: "https://www.esp.org.vn/wp-content/uploads/2023/10/giz.png",
+    },
 ];
 
 const Clients = () => {
